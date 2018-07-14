@@ -4,10 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\ScheduleRequest;
 use Carbon\Carbon;
-use Illuminate\Pagination\Paginator;
-use Illuminate\Pagination\LengthAwarePaginator;
-use Illuminate\Support\Collection;
-use Illuminate\Http\Request;
+
 
 class HomeController extends Controller
 {
@@ -36,13 +33,6 @@ class HomeController extends Controller
 
 
         return view('table',compact('dates'));
-    }
-
-
-    public function table()
-    {
-
-
     }
 
     /**
